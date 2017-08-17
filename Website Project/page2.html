@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+	<title>Rubix World Records</title>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<div class="headbanner">
+		<h1>
+			<img id="banner" src="assets/img/headbanner.jpg"/>
+			<div id="bannertxt"><span class="rub">Rub</span><span class="ixw">ix W</span><span class="orl">orl</span><span class="dre">d Re</span><span class="cor">cor</span><span class="ds">ds</span></div>
+		</h1>
+	</div>
+
+	<div class="navbar">
+		<ul>
+			<li id="nav1"><a href="index.html">Home</a></li>
+			<li id="nav2"><a href="page1.html">2x2 & 3x3</a></li>
+	</div>
+
+	<section class="container">
+		<div class="cube">
+			<figure class="front"><img src="assets/img/front.png" onclick="getClick(this, '.front')"/></figure>
+			<figure class="back"><img src="assets/img/back.png" onclick="getClick(this,'.back')"/></figure>
+			<figure class="right"><img src="assets/img/right.png" onclick="getClick(this,'.right')"/></figure>
+			<figure class="left"><img src="assets/img/left.png" onclick="getClick(this,'.left')"/></figure>
+			<figure class="top"><img src="assets/img/top.png" onclick="getClick(this,'.top')"/></figure>
+			<figure class="bottom"><img src="assets/img/bottom.png" onclick="getClick(this,'.bottom')"/></figure>
+		</div>
+	</section>
+
+	<canvas id="canvas"></canvas>
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/cube_anim.js"></script>
+</body>
+
+</html>

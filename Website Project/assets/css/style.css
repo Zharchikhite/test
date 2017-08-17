@@ -1,0 +1,148 @@
+/*======================
+|        Mixins        |
+======================*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*======================
+|       Header         |
+======================*/
+/*======================
+|        Body          |
+======================*/
+body .headbanner h1 {
+  text-align: center; }
+  body .headbanner h1 #banner {
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    height: 400px;
+    display: block; }
+  body .headbanner h1 #bannertxt {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    right: auto;
+    width: auto;
+    height: auto;
+    font-size: 150px;
+    -webkit-text-stroke: 2px solid black;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+    body .headbanner h1 #bannertxt .rub {
+      color: red; }
+    body .headbanner h1 #bannertxt .ixw {
+      color: blue; }
+    body .headbanner h1 #bannertxt .orl {
+      color: orange; }
+    body .headbanner h1 #bannertxt .dre {
+      color: green; }
+    body .headbanner h1 #bannertxt .cor {
+      color: gold; }
+    body .headbanner h1 #bannertxt .ds {
+      color: white; }
+body .navbar ul {
+  position: absolute;
+  top: 400px;
+  left: auto;
+  right: auto;
+  width: 10%;
+  height: 400px;
+  padding-top: 400px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  overflow: auto; }
+  body .navbar ul #nav1 > a {
+    bottom: 392px; }
+  body .navbar ul #nav2 > a {
+    bottom: 275px; }
+  body .navbar ul li:nth-child(1n+0) {
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: auto;
+    height: 105px; }
+    body .navbar ul li:nth-child(1n+0) a {
+      position: absolute;
+      width: 150px;
+      height: 90px;
+      border: 4px solid black;
+      border-radius: 25px;
+      background-color: royalblue;
+      font-size: 37px;
+      text-align: center;
+      display: block;
+      padding: 8px 16px;
+      color: white;
+      -webkit-text-stroke: 2px solid black;
+      text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+    body .navbar ul li:nth-child(1n+0) :hover {
+      background-color: green; }
+body .vids #vid1 {
+  position: absolute;
+  width: 50%;
+  height: 500px;
+  top: 400px;
+  right: 765px; }
+body .vids div #vid1txt {
+  position: absolute;
+  top: 450px;
+  right: 0px;
+  color: white;
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-text-stroke: 0.5px solid black;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+body .container {
+  position: relative;
+  -webkit-perspective: 1000; }
+  body .container .cube {
+    position: absolute;
+    top: 600px;
+    left: 200px;
+    -webkit-transition: -webkit-transform 2s linear;
+    -webkit-transform-style: preserve-3d; }
+    body .container .cube .front {
+      -webkit-transform: rotateX(0) rotateY(180deg) rotate(0) translateZ(27px); }
+    body .container .cube .back {
+      -webkit-transform: rotateX(0) rotateY(0) rotate(0) translateZ(27px); }
+    body .container .cube .right {
+      -webkit-transform: rotateX(0) rotateY(90deg) rotate(0) translateZ(27px); }
+    body .container .cube .left {
+      -webkit-transform: rotateX(90deg) rotateY(0) rotate(0) translateZ(27px); }
+    body .container .cube .top {
+      -webkit-transform: rotateX(0) rotateY(-90deg) rotate(0) translateZ(27px); }
+    body .container .cube .bottom {
+      -webkit-transform: rotateX(-90deg) rotateY(0) rotate(180deg) translateZ(27px); }
+    body .container .cube figure {
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      display: block;
+      margin: 0;
+      border: 1px solid black; }
+body #canvas {
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: auto;
+  width: auto;
+  height: auto; }
+
+/*======================
+|      Animations      |
+======================*/
+@-webkit-keyframes rotF {
+  0% {
+    -webkit-transform: rotateX(90deg) rotateY(0) rotate(0) translateZ(27px); }
+  50% {
+    -webkit-transform: rotateX(180deg) rotateY(0) rotate(0) translateZ(27px); }
+  100% {
+    -webkit-transform: rotateX(270deg) rotateY(0) rotate(0) translateZ(27px); } }
+
+/*# sourceMappingURL=style.css.map */
